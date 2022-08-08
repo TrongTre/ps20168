@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="base.css">
+    <script src="checkError.js"></script>
+    <title>Document</title>
+</head>
+<body>
+     <div class="modal">
+        <div class="modal__overlay">
+
+        </div>
+        <div class="modal__body">
+
+
+            <div class="auth-form">
+                <div class="auth-form__container">
+                    <div class="auth-form__header">
+                        <h3 class="auth-form__heading">Đăng ký</h3>
+                        <span class="auth-form__switch-btn">Đăng nhập</span>
+                    </div>
+
+                    <div class="auth-form__form">
+                        <div class="auth-form__group">
+                            <span id="errTen"></span>
+                            <input type="text" class="auth-form__input" id="txtTen" placeholder="Tên đăng nhập">
+                            
+                        </div>
+
+                        <div class="auth-form__group">
+                            <span id="errEmail"></span>
+                            <input type="text" class="auth-form__input" id="txtEmail" placeholder="Email">
+                           
+                        </div>
+
+                        <div class="auth-form__group">
+                            <span id="errPass"></span>
+                            <input type="password" class="auth-form__input" id="txtPass"  placeholder="Password">
+                            
+                        </div>
+
+                        <div class="auth-form__group">
+                            <span id="errPassAgain"></span>
+                            <input type="password" class="auth-form__input" id="txtPassAgain" placeholder="Nhập lại password">
+                            
+                        </div>
+
+                        <div class="auth-form__group">
+                            <span id="errSDT"></span>
+                            <input type="text" class="auth-form__input" id="txtSDT" placeholder="Nhập số điện thoại">
+                            
+                        </div>
+                    </div>
+
+                    <div class="auth-form__">
+                        <p class="auth-form__policy-text">
+                            Muốn đăng ký, có nghĩa bạn đã đồng ý về
+                            <a href="" class="auth-form__text-link">Điều khoản của TrongTre</a>
+                        </p>
+                    </div>
+
+                    <div class="auth-form__controls">
+                        <button class="btn auth-form__controls-back">Trở về</button>
+                        <button class="btn btn--primary" onclick="fValid();">Đăng ký</button>
+                    </div>
+                </div>
+
+                <div class="auth-form__socials">
+                    <a href="" class="auth-form__socials--facebook btn btn--size-s btn--with-icon">
+                        <i class="auth-form__socials-icon fa-brands fa-facebook-square"></i>
+                        Đăng ký bằng Facebook
+                    </a>
+
+                    <a href="" class="auth-form__socials--google btn btn--with-icon">
+                        <i class="auth-form__socials-icon fa-brands fa-google"></i>
+                        Đăng ký bằng Google
+                    </a>
+                </div>
+            </div> 
+</body>
+</html>
